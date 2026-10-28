@@ -4,6 +4,15 @@ This repository contains the complete assignment solutions, source code, scripts
 
 ---
 
+## 📄 Assessment Report
+
+- **PDF Report**: [View / Download Assessment PDF](https://raw.githubusercontent.com/zaid-as-w/HCLTech-Cloud-Data-Engineer/main/Documents/Juved_MahammadRafik_Attar_2JI23CS056_HCLTech_Assessment_2.pdf) *(Click to open directly in browser)*
+- **Word Document**: [Download .docx Report](./Documents/Juved_MahammadRafik_Attar_2JI23CS056.docx)
+
+> **Note on GitHub PDF Preview**: If GitHub's inline viewer displays *"Unable to render code block"*, click the **"View raw"** or **"Download"** button on the file page, or open the direct [PDF link above](https://raw.githubusercontent.com/zaid-as-w/HCLTech-Cloud-Data-Engineer/main/Documents/Juved_MahammadRafik_Attar_2JI23CS056_HCLTech_Assessment_2.pdf).
+
+---
+
 ## 📁 Repository Structure
 
 ```text
