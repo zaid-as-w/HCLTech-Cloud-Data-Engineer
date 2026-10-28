@@ -1,0 +1,32 @@
+#!/bin/bash
+# Check whether both arguments are provided
+if [ "$#" -ne 2 ]; then
+    echo "Error: Usage: $0 <source_directory> <destination_directory>"
+    exit 1
+fi
+SOURCE="$1"
+DESTINATION="$2"
+# Check whether the source directory exists
+if [ ! -d "$SOURCE" ]; then
+    echo "Error: Source directory '$SOURCE' does not exist."
+    exit 1
+fi
+# Create destination directory if it does not exist
+if [ ! -d "$DESTINATION" ]; then
+    mkdir -p "$DESTINATION"
+    if [ $? -ne 0 ]; then
+        echo "Error: Could not create destination directory."
+        exit 1
+    fi
+fi
+# Generate a timestamp
+TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+# Create a compressed archive
+ARCHIVE="$DESTINATION/backup_$TIMESTAMP.tar.gz"
+if tar -czf "$ARCHIVE" -C "$(dirname "$SOURCE")" "$(basename "$SOURCE")"; then
+    echo "Success: Backup created successfully at $ARCHIVE"
+else
+    echo "Error: Backup failed."
+    exit 1
+fi
+exit 0
