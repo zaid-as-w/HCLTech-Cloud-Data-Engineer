@@ -1,65 +1,50 @@
-# HCLTech Cloud Data Engineer Assessment
+# HCLTech Cloud Data Engineer Program
 
-This repository contains the complete assignment solutions, source code, scripts, architectural configurations, and validation screenshots for the HCLTech Cloud Data Engineer Assessment.
-
----
-
-## 📄 Assessment Report
-
-- **PDF Report**: [View / Download Assessment PDF](https://raw.githubusercontent.com/zaid-as-w/HCLTech-Cloud-Data-Engineer/main/Documents/Juved_MahammadRafik_Attar_2JI23CS056_HCLTech_Assessment_2.pdf) *(Click to open directly in browser)*
-- **Word Document**: [Download .docx Report](./Documents/Juved_MahammadRafik_Attar_2JI23CS056.docx)
-
-> **Note on GitHub PDF Preview**: If GitHub's inline viewer displays *"Unable to render code block"*, click the **"View raw"** or **"Download"** button on the file page, or open the direct [PDF link above](https://raw.githubusercontent.com/zaid-as-w/HCLTech-Cloud-Data-Engineer/main/Documents/Juved_MahammadRafik_Attar_2JI23CS056_HCLTech_Assessment_2.pdf).
+This repository documents the practical implementations, code, cloud architectures, data pipelines, and reports for the **HCLTech Cloud Data Engineer Assessment Program**.
 
 ---
 
-## 📁 Repository Structure
+## 🗂️ Assessments Overview
+
+| Assessment | Scope & Focus Areas | Documentation & Code |
+| :--- | :--- | :--- |
+| **[Assessment-1](./Assessment-1)** | • SQL Joins & Aggregations<br>• Linux CLI & Text Processing<br>• AWS Glue Serverless ETL Pipeline<br>• Amazon Athena S3 Querying<br>• Azure Data Lake Storage (ADLS) | [📁 View Assessment 1](./Assessment-1)<br>📄 [PDF Report](https://raw.githubusercontent.com/zaid-as-w/HCLTech-Cloud-Data-Engineer/main/Assessment-1/Assignment-PDF/Juved_MahammadRafik_Attar_2JI23CS056.pdf) |
+| **[Assessment-2](./Assessment-2)** | • Relational DB Design & Constraints (`EnterpriseDB`)<br>• Linux Automated Backup Shell Scripting<br>• PySpark Data Processing & Aggregations<br>• AWS S3 Bucket & Security Policies<br>• AWS Step Functions Orchestration<br>• Azure Data Lake Storage Gen2 | [📁 View Assessment 2](./Assessment-2)<br>📄 [PDF Report](https://raw.githubusercontent.com/zaid-as-w/HCLTech-Cloud-Data-Engineer/main/Assessment-2/Assignment-PDF/Juved_MahammadRafik_Attar_2JI23CS056_HCLTech_Assessme-2.pdf) |
+
+---
+
+## 📁 Repository Directory Structure
 
 ```text
-├── Documents/
-│   ├── Juved_MahammadRafik_Attar_2JI23CS056.docx    # Assessment documentation & report
-│   └── Juved_MahammadRafik_Attar_2JI23CS056_HCLTech_Assessment_2.pdf # Assessment PDF report
-├── Section-A/                                        # SQL Database Design & Queries
-│   ├── Q1-Q2-Q3.sql                                 # Schema definition, queries, and constraints
-│   └── *.png                                        # Query execution screenshots
-├── Section-B/                                        # Shell Scripting & Linux Automation
-│   ├── Q6-Script.txt                                # Directory backup & archive automation script
-│   └── *.png                                        # Script execution screenshot
-├── Section-C/                                        # PySpark & Big Data Processing
-│   ├── pyspark_assignment.py                        # PySpark DataFrame operations & aggregations
-│   └── *.png                                        # Execution outputs and transformations
-├── Section-D/                                        # Cloud Storage (AWS S3)
-│   └── *.png                                        # S3 bucket configuration & permission screenshots
-├── Section-E/                                        # Cloud Orchestration (AWS Step Functions)
-│   └── *.png                                        # State machine workflow definition & execution
-├── Section-F/                                        # Azure Data Lake Storage (ADLS)
-│   └── *.png                                        # ADLS setup, container, and configuration screenshots
+├── Assessment-1/
+│   ├── Assignment-PDF/            # Assessment 1 report PDF
+│   ├── Task1-sql/                 # SQL joins and aggregation queries
+│   ├── Task2-linux/               # Linux utilities and grep commands
+│   ├── Task3-aws glue/            # AWS Glue crawler & ETL job screenshots
+│   ├── Task4-athena/              # Amazon Athena queries & execution logs
+│   ├── Task5-azure dls/           # Azure Data Lake Storage setup
+│   └── README.md                  # Assessment 1 documentation
+│
+├── Assessment-2/
+│   ├── Assignment-PDF/            # Assessment 2 report PDF
+│   ├── Section-A/                 # Schema creation & SQL analytical queries
+│   ├── Section-B/                 # Automated backup bash script
+│   ├── Section-C/                 # PySpark transformations & aggregations
+│   ├── Section-D/                 # AWS S3 storage configuration
+│   ├── Section-E/                 # AWS Step Functions state machine
+│   ├── Section-F/                 # Azure Data Lake Storage Gen2
+│   └── README.md                  # Assessment 2 documentation
+│
 └── README.md
 ```
 
 ---
 
-## 🛠️ Overview of Sections
+## 🛠️ Technologies & Tools
 
-### Section A: SQL & Relational Database Design
-- Schema creation (`EnterpriseDB`), tables with primary/foreign keys and check constraints.
-- Multi-table joins, aggregations, window functions, and query optimizations.
-- Step-by-step query execution screenshots.
-
-### Section B: Shell Scripting & Automation
-- Robust bash script for directory compression and timestamped backups (`tar.gz`).
-- Input parameter validation, error handling, and directory existence verification.
-
-### Section C: PySpark Data Engineering
-- PySpark application analyzing employee datasets with local SparkSession.
-- Grouping, multi-level aggregations (average salary, headcounts), and roundings using PySpark SQL functions.
-- Verified execution screenshots of transformed DataFrames and Spark outputs.
-
-### Section D: AWS S3 Cloud Storage
-- Cloud storage configurations, access policies, bucket setup, and verification.
-
-### Section E: AWS Step Functions Workflow Orchestration
-- State machine workflows, task routing, failure handling, and execution logs.
-
-### Section F: Azure Data Lake Storage (ADLS)
-- Azure Data Lake Storage Gen2 setup, container hierarchy, and access controls.
+- **Languages & Scripting**: Python (PySpark), SQL, Bash / Shell Scripting
+- **Big Data & Analytics**: Apache Spark / PySpark, AWS Glue Data Catalog & ETL, Amazon Athena
+- **Cloud Platforms**:
+  - **Amazon Web Services (AWS)**: S3, Glue, Athena, Step Functions, IAM
+  - **Microsoft Azure**: Azure Data Lake Storage Gen2 (ADLS)
+- **Database Systems**: MySQL / Relational Database Management Systems
